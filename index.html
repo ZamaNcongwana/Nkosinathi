@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Proposal | Black Coffee Foundation</title>
+  <meta name="description" content="A creative proposal for an innovative online shopping experience where music, personalisation and discovery come together.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #090909;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 35px 22px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 20%,
+          rgba(183, 139, 68, 0.20), transparent 55%),
+        linear-gradient(135deg, #090909, #181818 55%, #080808);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border: 1px solid rgba(218, 177, 104, 0.18);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 35px rgba(218, 177, 104, 0.025),
+        0 0 0 75px rgba(218, 177, 104, 0.025);
+      pointer-events: none;
+    }
+
+    .content {
+      max-width: 780px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #dfbb7c;
+      border: 1px solid rgba(223, 187, 124, 0.4);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: #dfbb7c;
+    }
+
+    .intro {
+      max-width: 620px;
+      margin: 0 auto 32px;
+      color: #d0d0d0;
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: #dfbb7c;
+      color: #111111;
+      padding: 15px 27px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    .tagline {
+      margin-top: 28px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #eeeeee;
+      letter-spacing: 1px;
+    }
+
+    .proposal {
+      padding: 85px 22px;
+      background: #f5f3ef;
+      color: #171717;
+      text-align: center;
+    }
+
+    .proposal-inner {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .proposal h2 {
+      font-size: clamp(30px, 5vw, 44px);
+      margin-bottom: 22px;
+      line-height: 1.2;
+    }
+
+    .proposal h2 span {
+      color: #a77b3e;
+    }
+
+    .proposal p {
+      color: #4d4d4d;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 38px;
+      text-align: left;
+    }
+
+    .feature {
+      padding: 23px 18px;
+      background: #ffffff;
+      border: 1px solid #e8e3db;
+      border-radius: 8px;
+    }
+
+    .feature .symbol {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .closing {
+      margin-top: 40px;
+    }
+
+    .closing .button {
+      background: #171717;
+      color: #ffffff;
+    }
+
+    footer {
+      padding: 24px 15px;
+      background: #090909;
+      color: #999999;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    @media (max-width: 600px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        font-size: 14px;
+      }
+
+      .eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="content">
+
+      <div class="eyebrow">
+        A CREATIVE IDEA FOR THE FUTURE
+      </div>
+
+      <h1>
+        My <span>Proposal</span>
+      </h1>
+
+      <p class="intro">
+        Imagine an online shopping experience where music meets
+        discovery. Click, adjust your preferences, and enjoy listening
+        to music while shopping online — bringing entertainment,
+        personalisation, and convenience together in one place.
+      </p>
+
+      <a href="#my-proposal" class="button">
+        EXPLORE MY PROPOSAL &rarr;
+      </a>
+
+      <p class="tagline">
+        CLICK. ADJUST. ENJOY.
+      </p>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="proposal" id="my-proposal">
+      <div class="proposal-inner">
+
+        <h2>
+          Shopping Meets <span>Music</span>
+        </h2>
+
+        <p>
+          My vision is to create a more engaging digital shopping
+          experience by combining online product discovery with the
+          enjoyment of music. Customers could browse products,
+          personalise their experience, and listen to music as they shop.
+        </p>
+
+        <p>
+          This concept aims to connect entertainment, digital commerce,
+          and creative innovation in a simple, enjoyable, and
+          user-friendly environment.
+        </p>
+
+        <div class="features">
+
+          <article class="feature">
+            <div class="symbol">&#9835;</div>
+            <h3>Enjoy the Music</h3>
+            <p>
+              Make music part of the shopping journey with a listening
+              experience that complements the customer.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="symbol">&#9881;</div>
+            <h3>Adjust Your Experience</h3>
+            <p>
+              Explore the potential for personalised listening
+              preferences and a more comfortable browsing experience.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="symbol">&#128722;</div>
+            <h3>Shop Online</h3>
+            <p>
+              Discover products in a convenient digital space where
+              shopping and entertainment come together.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="closing">
+          <p>
+            I look forward to the opportunity to share this vision
+            and explore its potential with the Black Coffee Foundation.
+          </p>
+
+          <a href="mailto:YOUR_EMAIL@example.com"
+             class="button">
+            LET'S CONNECT
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> My Proposal.
+      Created with creativity and innovation.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
